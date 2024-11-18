@@ -1,5 +1,5 @@
 Modules = [
-    "github.com/hexya-addons/web"
+    "github.com/vitesales/cyrus-web"
 ]
 LogStdout = true
 #LogFile = ""
