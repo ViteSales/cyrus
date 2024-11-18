@@ -56,7 +56,7 @@ var projectCleanCmd = &cobra.Command{
 	Long: `Clean the current directory from all generated and test artifacts.
 You should use this command before committing your work.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		runCommand("go", "mod", "edit", "-dropreplace", "github.com/hexya-erp/pool@v1.0.2")
+		runCommand("go", "mod", "edit", "-dropreplace", "github.com/vitesales/cyrus-pool@v1.0.2")
 		if err := removeProjectDir(PoolDirRel); err != nil {
 			fmt.Println(err)
 		}
@@ -78,7 +78,7 @@ func removeProjectDir(dir string) error {
 
 func writeConfigFile(projectDir string) error {
 	InitConfig()
-	cfgFile := filepath.Join(projectDir, "hexya.toml")
+	cfgFile := filepath.Join(projectDir, "cyrus.toml")
 	return viper.WriteConfigAs(cfgFile)
 }
 

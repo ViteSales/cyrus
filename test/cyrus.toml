@@ -1,29 +1,29 @@
-Modules = [
-    "github.com/vitesales/cyrus-web"
-]
-LogStdout = true
-#LogFile = ""
-LogLevel = "info"
-Debug = true
-Demo = true
-#DataDir = ""
+configfilename = ''
+datadir = '/Users/julfikar/.cyrus'
+debug = true
+demo = true
+logfile = ''
+loglevel = 'info'
+logstdout = true
+modules = ['github.com/vitesales/cyrus-web']
+resourcedir = './res'
 
-[DB]
-Driver = "postgres"
-Host = "aws-0-ap-southeast-1.pooler.supabase.com"
-Port = 6543
-User = "postgres.bafclcxttfppruzavrgm"
-Password = "supabase123@"
-Name = "postgres"
-#SSLMode = false
-#SSLCert = ""
-#SSLKey = ""
-#SSLCA = ""
+[db]
+driver = 'postgres'
+host = 'aws-0-ap-southeast-1.pooler.supabase.com'
+name = 'postgres'
+password = 'supabase123@'
+port = 6543
+sslca = ''
+sslcert = ''
+sslkey = ''
+sslmode = 'disable'
+user = 'postgres.bafclcxttfppruzavrgm'
 
-[Server]
-Languages = ["all"]
-#Interface = ""
-Port = 8080
-#Domain = ""
-#Certificate = ""
-#PrivateKey = ""
+[server]
+certificate = ''
+domain = ''
+interface = ''
+languages = ['all']
+port = 8080
+privatekey = ''
