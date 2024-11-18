@@ -1,0 +1,29 @@
+Modules = [
+    "github.com/hexya-addons/web"
+]
+LogStdout = true
+#LogFile = ""
+LogLevel = "info"
+Debug = true
+Demo = true
+#DataDir = ""
+
+[DB]
+Driver = "postgres"
+Host = "aws-0-ap-southeast-1.pooler.supabase.com"
+Port = 6543
+User = "postgres.bafclcxttfppruzavrgm"
+Password = "supabase123@"
+Name = "postgres"
+#SSLMode = false
+#SSLCert = ""
+#SSLKey = ""
+#SSLCA = ""
+
+[Server]
+Languages = ["all"]
+#Interface = ""
+Port = 8080
+#Domain = ""
+#Certificate = ""
+#PrivateKey = ""
