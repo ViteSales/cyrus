@@ -1,0 +1,16 @@
+package emailutils
+
+import "regexp"
+
+// SingleEmailRE is the regular expression for a single email address
+const SingleEmailRE string = `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63}$`
+
+// IsValidAddress returns true if the given address is valid
+// and contains only one address
+func IsValidAddress(address string) bool {
+	ok, err := regexp.MatchString(SingleEmailRE, address)
+	if !ok || err != nil {
+		return false
+	}
+	return true
+}

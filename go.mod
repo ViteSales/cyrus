@@ -5,6 +5,7 @@ go 1.23
 require (
 	github.com/beevik/etree v1.4.1
 	github.com/cockroachdb/apd/v2 v2.0.2
+	github.com/disintegration/imaging v1.6.2
 	github.com/flosch/pongo2 v0.0.0-20200913210552-0d938eb266f3
 	github.com/gin-contrib/pprof v1.5.1
 	github.com/gin-contrib/sessions v1.0.1
@@ -62,6 +63,7 @@ require (
 	go.uber.org/multierr v1.10.0 // indirect
 	golang.org/x/arch v0.12.0 // indirect
 	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
+	golang.org/x/image v0.0.0-20191009234506-e7c1f5e7dbb8 // indirect
 	golang.org/x/mod v0.17.0 // indirect
 	golang.org/x/net v0.31.0 // indirect
 	golang.org/x/sync v0.9.0 // indirect
